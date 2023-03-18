@@ -36,4 +36,10 @@ Run the command: =docker build . -t [your_image_name]=
 
 This will create a custom latex image with the required dependencies.
 
+** Running The Docker Image
+Once the image is built(or pull from dockerhub) mount a host path volume to where the files are going to be compiled. The image will automatically run and compile all the necesary files.
+#+begin_src bash
+docker container run --name [container_name] --rm --volume /your/latex/files/path:/app [image_name]
+#+end_src
+
 Happy coding!!!
