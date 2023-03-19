@@ -42,4 +42,3 @@ Once the image is built(or pull from dockerhub) mount a host path volume to wher
 docker container run --name [container_name] --rm --volume /your/latex/files/path:/app [image_name]
 #+end_src
 
-Happy coding!!!
